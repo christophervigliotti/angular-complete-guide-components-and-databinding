@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="row">
+  <!--
+  moved to cockpit
+
+    <div class="row">
     <div class="col-xs-12">
       <p>Add new Servers or blueprints!</p>
       <label>Server Name</label>
@@ -15,9 +18,16 @@
         (click)="onAddBlueprint()">Add Server Blueprint</button>
     </div>
   </div>
+  -->
+  <app-cockpit></app-cockpit>
+
   <hr>
   <div class="row">
     <div class="col-xs-12">
+      <!--
+
+      moved to server-element
+
       <div
         class="panel panel-default"
         *ngFor="let element of serverElements">
@@ -29,6 +39,8 @@
           </p>
         </div>
       </div>
+      -->
+      <app-server-element *ngFor="let serverElement of serverElements"></app-server-element>
     </div>
   </div>
 </div>
