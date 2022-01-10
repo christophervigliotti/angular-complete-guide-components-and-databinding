@@ -1,10 +1,8 @@
 # Section 5: Components & Databinding Deep Dive
 
-## Next Time
+## TODO: rewatch & review 67, 68, 69 (improve notes)
 
-* rewatch 67
-* 68
-* 69
+do it!
 
 ## Notes
 
@@ -21,7 +19,7 @@ notes
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656076#questions
 
 ```
-notes
+notes go here
 ```
 
 ### 68. Assigning an Alias to Custom Properties
@@ -41,7 +39,11 @@ assigning an alias the element property...
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656066#questions
 
+
+* use property binding to bind to properties of our components
+
 ```
+
 bound the 'element' property to the main component by... 
 
 1. adding [element]="serverElement" to 
