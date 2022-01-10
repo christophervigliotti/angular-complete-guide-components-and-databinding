@@ -1,8 +1,12 @@
 # Section 5: Components & Databinding Deep Dive
 
-## TODO: rewatch & review 67, 68, 69 (improve notes)
+## Next Step(s)
 
-do it!
+* TODO: rewatch & review section 66 (improve notes, close knowledge gaps)
+* DONE: rewatch & review section 67 (improve notes, close knowledge gaps)
+* TODO: rewatch & review section 68 (improve notes, close knowledge gaps)
+* TODO: rewatch & review section 69 (improve notes, close knowledge gaps)
+* TODO: proceed with section 70
 
 ## Notes
 
@@ -12,6 +16,23 @@ link_url
 
 ```
 notes
+```
+
+### 71. chapter_title
+
+link_url
+
+```
+notes
+
+### 70. chapter_title
+
+link_url
+
+```
+notes
+```
+
 ```
 
 ### 69. Binding to Custom Events
