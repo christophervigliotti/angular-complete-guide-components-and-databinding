@@ -40,9 +40,14 @@ assigning an alias the element property...
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656066#questions
 
 
-* use property binding to bind to properties of our components
+* by default all properties of components are only accessible by that component (this is good)
+* use property binding to bind to properties of other components 
+* you have to be explicit about what properties you want to expose to other components
+* a decorator is added to a property to expose it to other components.  For example, `@Input()` is added to `element: {type: string,name: string,content: string}`, making it `@Input() lement: {type: string,name: string,content: string}`.  Once this is done we are successfully exposing this property to it's parent component(s) 
+* Parent components are components that are hosting/ have implemented a component).  In this example, the app component is a parent of the server-element component.
 
 ```
+more notes...
 
 bound the 'element' property to the main component by... 
 
@@ -68,7 +73,6 @@ bound the 'element' property to the main component by...
     and importing it: import { Component, Input, OnInit } from '@angular/core';
 
     in server-element.components.ts 
-
 ```
 
 ### 66. Property & Event Binding Overview
@@ -88,7 +92,6 @@ not working.   --spec false is now --skip-tests true
 gtg  
 
 refactor  
-
 ```
 
 ### 64. Module Introduction
