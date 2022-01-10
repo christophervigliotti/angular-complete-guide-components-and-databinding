@@ -16,12 +16,25 @@ link_url
 notes
 ```
 
-### 68. Assigning an Alias to Custom Properties
+### 69. Binding to Custom Events
 
-link_url
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656076#questions
 
 ```
 notes
+```
+
+### 68. Assigning an Alias to Custom Properties
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656072#questions
+
+
+assigning an alias the element property... 
+
+* `@Input()` becomes `@Input('srvElement')` in server-element.component.ts
+* `[element]="serverElement"` becomes `[srvElement]="serverElement"` in app.component.html
+
+```
 ```
 
 ### 67. Binding to Custom Properties
