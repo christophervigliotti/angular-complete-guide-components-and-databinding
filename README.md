@@ -2,7 +2,7 @@
 
 ## Next Step(s)
 
-* TODO: rewatch & review section 66 (improve notes, close knowledge gaps)
+* DONE 1/11/2022: rewatch & review section 66 (improve notes, close knowledge gaps)
 * DONE: rewatch & review section 67 (improve notes, close knowledge gaps)
 * TODO: rewatch & review section 68 (improve notes, close knowledge gaps)
 * TODO: rewatch & review section 69 (improve notes, close knowledge gaps)
@@ -99,6 +99,12 @@ bound the 'element' property to the main component by...
 ### 66. Property & Event Binding Overview
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656062#questions 
+
+sending data into data into a component and/or receive an event
+
+* HTML Elements - native properties and events
+* Directives - custom properties and events
+* Components - custom properties and events
 
 ### 65. Splitting Apps Into Components
 
