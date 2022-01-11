@@ -2,8 +2,8 @@
 
 ## Next Step(s)
 
+* DONE 1/10/2022: rewatch & review section 67 (improve notes, close knowledge gaps)
 * DONE 1/11/2022: rewatch & review section 66 (improve notes, close knowledge gaps)
-* DONE: rewatch & review section 67 (improve notes, close knowledge gaps)
 * TODO: rewatch & review section 68 (improve notes, close knowledge gaps)
 * TODO: rewatch & review section 69 (improve notes, close knowledge gaps)
 * TODO: proceed with section 70
