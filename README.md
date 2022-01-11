@@ -1,12 +1,17 @@
 # Section 5: Components & Databinding Deep Dive
 
-## Next Step(s)
+## Progress
+
+### Next Steps
+
+* TODO: proceed with section 70
+
+### Completed
 
 * DONE 1/10/2022: rewatch & review section 67 (improve notes, close knowledge gaps)
 * DONE 1/11/2022: rewatch & review section 66 (improve notes, close knowledge gaps)
 * DONE 1/11/2022: rewatch & review section 68 (improve notes, close knowledge gaps)
 * DONE 1/11/2022: rewatch & review section 69 (improve notes, close knowledge gaps)
-* TODO: proceed with section 70
 
 ## Notes
 
@@ -40,7 +45,8 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/66560
 
 
 * inform the parent component that a new server or blueprint is created `onServerAdded()` and `onBlueprintAdded()` created.  these methods will handle/respond to the event
-* below is the modified version of file app.component.html.  attributes `(serverCreated)="onServerAdded($event)"` and `(blueprintCreated)="onBlueprintAdded($event)"` are added to the `<app-cockpit>` tag.  these methods are wired to event emitters in file server-element.component.ts
+* below is the modified version of file app.component.html.  attributes `(serverCreated)="onServerAdded($event)"` and `(blueprintCreated)="onBlueprintAdded($event)"` are added to the `<app-cockpit>` tag.  these methods are wired to event emitter output properties in file server-element.component.ts.  
+* We are passing the event to the method via $event
 
 ```
 <!-- app.component.html -->
