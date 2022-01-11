@@ -5,7 +5,7 @@
 * DONE 1/10/2022: rewatch & review section 67 (improve notes, close knowledge gaps)
 * DONE 1/11/2022: rewatch & review section 66 (improve notes, close knowledge gaps)
 * DONE 1/11/2022: rewatch & review section 68 (improve notes, close knowledge gaps)
-* TODO: rewatch & review section 69 (improve notes, close knowledge gaps)
+* DONE 1/11/2022: rewatch & review section 69 (improve notes, close knowledge gaps)
 * TODO: proceed with section 70
 
 ## Notes
@@ -27,21 +27,46 @@ notes
 
 ```
 
-### 70. chapter_title
+### 70. Assigning an Alias to Custom Events
 
-link_url
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656078#questions
 
-```
-notes
-```
+* `@Output() blueprintCreated...` becomes `@Output('bpCreated') blueprintCreated...`
+* Just like chap 68 the alias name is passed as an argument
 
 ### 69. Binding to Custom Events
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656076#questions
 
 
+* inform the parent component that a new server or blueprint is created `onServerAdded()` and `onBlueprintAdded()` created.  these methods will handle/respond to the event
+* below is the modified version of file app.component.html.  attributes `(serverCreated)="onServerAdded($event)"` and `(blueprintCreated)="onBlueprintAdded($event)"` are added to the `<app-cockpit>` tag.  these methods are wired to event emitters in file server-element.component.ts
+
 ```
-notes go here
+<!-- app.component.html -->
+<div class="container">
+  <app-cockpit 
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBlueprintAdded($event)"
+  ></app-cockpit>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-server-element 
+        *ngFor="let serverElement of serverElements" 
+        [srvElement]="serverElement"
+      >
+      </app-server-element>
+    </div>
+  </div>
+</div>
+```
+
+```
+// server-element.component.ts (partial)
+@Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+@Output() blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+
 ```
 
 ### 68. Assigning an Alias to Custom Properties
