@@ -2,16 +2,16 @@
 
 ## Up Next
 
-TODO: section 71
+Section 74
 
 ## Notes
 
 ### number. chapter_title
 
-link_url
+url_goes_here
 
 ```
-notes
+notes_go_here
 ```
 
 ### 74. Using Local References in Templates
@@ -19,7 +19,7 @@ notes
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656092#questions
 
 ```
-notes
+notes_go_here
 ```
 
 ### 73. More on View Encapsulation
