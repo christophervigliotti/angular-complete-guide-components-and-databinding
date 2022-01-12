@@ -1,6 +1,6 @@
 # Section 5: Components & Databinding Deep Dive
 
-This is one of several repos created for course "Angular - The Complete Guide (2022 Edition)".  See https://gist.github.com/christophervigliotti/92e5b3b93cbe9d630d8e9d81b7eb6636 for more
+*This is one of several repos created for course "Angular - The Complete Guide (2022 Edition)".  See https://gist.github.com/christophervigliotti/92e5b3b93cbe9d630d8e9d81b7eb6636 for a complete list of my repos relating to this course.*
 
 ## Up Next
 
