@@ -23,12 +23,13 @@ link_url
 notes
 ```
 
-### 71. chapter_title
+### 71. Custom Property and Event Binding Summary
 
-link_url
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656080#questions
 
 ```
-notes
+Component communication is a key feature.  With @input & the ability 
+to make your properties bindable from outside (from the parent component) using this component.  The same for @output, which allows parent compoents (using this component) to listen to events that you created via event emitters.  Allows you to allow you to make a dynamic app that allows components to talk to each other.  These input & output chains can make things too complicated.  Later in the class: there is another approach to having components talk to each other.
 
 ```
 
