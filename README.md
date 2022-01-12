@@ -1,17 +1,8 @@
 # Section 5: Components & Databinding Deep Dive
 
-## Progress
+## Up Next
 
-### Next Steps
-
-* TODO: proceed with section 70
-
-### Completed
-
-* DONE 1/10/2022: rewatch & review section 67 (improve notes, close knowledge gaps)
-* DONE 1/11/2022: rewatch & review section 66 (improve notes, close knowledge gaps)
-* DONE 1/11/2022: rewatch & review section 68 (improve notes, close knowledge gaps)
-* DONE 1/11/2022: rewatch & review section 69 (improve notes, close knowledge gaps)
+TODO: section 71
 
 ## Notes
 
@@ -22,6 +13,29 @@ link_url
 ```
 notes
 ```
+
+### 74. Using Local References in Templates
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656092#questions
+
+```
+notes
+```
+
+### 73. More on View Encapsulation
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656086#questions
+
+
+* Override css/view encapsulation using the `encapsulation` argument of the `@Component` decorator.
+* `ViewEncapsulation.Emulated` is the default (no need to add it)
+* `ViewEncapsulation.None` (no attributes being added to elements of your component if you use this (view source and do a compare between `Emulated` and `None`)) 
+* `ViewEncapsulation.ShadowDom` uses shadow dom technology.  This should give you same result as `Emulated` but only in browsers that support shadow dom.
+* "Note: Shadow DOM is supported by default in Firefox (63 and onwards), Chrome, Opera, and Safari. The new Chromium-based Edge (79 and onwards) supports it too; the old Edge didn't." from https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
+
+### 72. Understanding View Encapsulation
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656082#questions
 
 ### 71. Custom Property and Event Binding Summary
 
