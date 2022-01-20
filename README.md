@@ -16,6 +16,39 @@ url_goes_here
 notes_go_here
 ```
 
+### number. chapter_title
+
+url_goes_here
+
+```
+notes_go_here
+```
+
+### 75. @ViewChild() in Angular 8+
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/14865241#overview
+
+In Angular 8+, the `@ViewChild()` syntax which you'll see in the next lecture needs to be changed slightly:
+
+Instead of:
+
+```
+@ViewChild('serverContentInput') serverContentInput: ElementRef;
+```
+
+use
+
+```
+@ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
+```
+
+The same change (add `{ static: true }` as a second argument) needs to be applied to ALL usages of `@ViewChild()` (and also `@ContentChild()` which you'll learn about later) IF you plan on accessing the selected element inside of `ngOnInit()`.
+
+If you DON'T access the selected element in `ngOnInit` (but anywhere else in your component), `set static: false` instead!
+
+If you're using Angular 9+, you only need to add `{ static: true }` (if needed) but not `{ static: false }`.
+
+
 ### 74. Using Local References in Templates
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656092#questions
@@ -26,7 +59,7 @@ in cockpit.component.html...
 1. change `<input type="text" class="form-control" [(ngModel)]="newServerName" />` to `<input type="text" class="form-control" #serverNameInput />`
 2. pass in serverNameInput to `onAddServer`... `(click)="onAddServer(serverNameInput)"` 
 
-in cockpit.component.ts...
+...then changed cockpit.component.ts, adding the nameInput argument (of type HTMLInputElement) and then setting the value of serverName to the value property of nameInput...
 
 old...
 ```
@@ -47,6 +80,8 @@ this.serverCreated.emit({
 });
 }
 ```
+
+Note that the newServerName  property of CockpitComponent are now no longer being used.
 
 ### 73. More on View Encapsulation
 
