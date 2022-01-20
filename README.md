@@ -20,8 +20,32 @@ notes_go_here
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656092#questions
 
+Replacing two-way databinding with local references
+
+in cockpit.component.html...
+1. change `<input type="text" class="form-control" [(ngModel)]="newServerName" />` to `<input type="text" class="form-control" #serverNameInput />`
+2. pass in serverNameInput to `onAddServer`... `(click)="onAddServer(serverNameInput)"` 
+
+in cockpit.component.ts...
+
+old...
 ```
-notes_go_here
+onAddServer() {
+this.serverCreated.emit({
+    serverName: this.newServerName, 
+    serverContent: this.newServerContent
+});
+}
+```
+new...
+```
+onAddServer(nameInput: HTMLInputElement) {
+// console.log(nameInput.value);
+this.serverCreated.emit({
+    serverName: nameInput.value, 
+    serverContent: this.newServerContent
+});
+}
 ```
 
 ### 73. More on View Encapsulation
