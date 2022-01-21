@@ -43,9 +43,9 @@ removing from server-element.component.html...
 >
 </app-server-element>
 
-...and then add this special directive, changing...
+...and then add the ng-content directive.  This marks the spot telling Angular to include code found in the opening and closing <app-server-element> tags.  
 
-
+ 
 ```
 
 ### 77. Projecting Content into Components with ng-content

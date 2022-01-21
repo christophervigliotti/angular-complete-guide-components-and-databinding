@@ -11,12 +11,12 @@
         [srvElement]="serverElement"
       >
       <p>
-        A.<strong 
+        <strong 
           *ngIf="serverElement.type === 'server'" 
           style="color: red"
         >{{ serverElement.content }}</strong>
       
-        B.<em 
+        <em 
           *ngIf="serverElement.type === 'blueprint'"
         >{{ serverElement.content }}</em>
       </p>
