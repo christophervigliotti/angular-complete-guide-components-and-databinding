@@ -4,18 +4,56 @@
 
 ## Next Time
 
-* Additional focus on the three ways to get data from the view (see Section 76 for the list).  Add notes.
-77
+* 78
 
 ## Notes
 
-### number. chapter_title
+### 83. chapter_title
 
 url_goes_here
 
 ```
+notes_go_here
+```
 
- 
+### 82. chapter_title
+
+url_goes_here
+
+```
+notes_go_here
+```
+
+### 81. chapter_title
+
+url_goes_here
+
+```
+notes_go_here
+```
+
+### 80. chapter_title
+
+url_goes_here
+
+```
+notes_go_here
+```
+
+### 79. chapter_title
+
+url_goes_here
+
+```
+notes_go_here
+```
+
+### 78. Understanding the Component Lifecycle
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656102#overview
+
+```
+notes_go_here
 ```
 
 ### 77. Projecting Content into Components with ng-content
