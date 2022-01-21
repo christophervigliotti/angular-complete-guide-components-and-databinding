@@ -14,8 +14,19 @@
 url_goes_here
 
 ```
+
+ 
+```
+
+### 77. Projecting Content into Components with ng-content
+
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656100#overview
+
+The preferred method for passing HTML from one place to another...  
+
 removing from server-element.component.html...
 
+```
 <p>
   <strong 
     *ngIf="element.type === 'server'" 
@@ -26,35 +37,29 @@ removing from server-element.component.html...
     *ngIf="element.type === 'blueprint'"
   >{{ element.content }}</em>
 </p>
+```
 
 ...and in app.component.html we change...
 
+```
 <app-server-element 
   *ngFor="let serverElement of serverElements" 
   [srvElement]="serverElement"
 >
 </app-server-element>
+```
 
 ...to...
 
+```
 <app-server-element 
   *ngFor="let serverElement of serverElements" 
   [srvElement]="serverElement"
 >
 </app-server-element>
-
-...and then add the ng-content directive.  This marks the spot telling Angular to include code found in the opening and closing <app-server-element> tags.  
-
- 
 ```
 
-### 77. Projecting Content into Components with ng-content
-
-https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656100#overview
-
-```
-notes_go_here
-```
+...and then add the ng-content directive.  This marks the spot telling Angular to include code found in the opening and closing `<app-server-element>` tags.  
 
 ### The Three Ways To Get Data From The View (recap)
 
