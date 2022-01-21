@@ -14,12 +14,43 @@
 url_goes_here
 
 ```
-notes_go_here
+removing from server-element.component.html...
+
+<p>
+  <strong 
+    *ngIf="element.type === 'server'" 
+    style="color: red"
+  >{{ element.content }}</strong>
+
+  <em 
+    *ngIf="element.type === 'blueprint'"
+  >{{ element.content }}</em>
+</p>
+
+...and in app.component.html we change...
+
+<app-server-element 
+  *ngFor="let serverElement of serverElements" 
+  [srvElement]="serverElement"
+>
+</app-server-element>
+
+...to...
+
+<app-server-element 
+  *ngFor="let serverElement of serverElements" 
+  [srvElement]="serverElement"
+>
+</app-server-element>
+
+...and then add this special directive, changing...
+
+
 ```
 
-### number. chapter_title
+### 77. Projecting Content into Components with ng-content
 
-url_goes_here
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656100#overview
 
 ```
 notes_go_here

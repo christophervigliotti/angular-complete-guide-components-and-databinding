@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
