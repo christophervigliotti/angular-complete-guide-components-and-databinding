@@ -4,7 +4,7 @@
 
 ## Next Time
 
-* 78
+* review 78, dive into 79 and 80
 
 ## Notes
 
@@ -40,9 +40,9 @@ url_goes_here
 notes_go_here
 ```
 
-### 79. chapter_title
+### 79. Seeing Lifecycle Hooks in Action
 
-url_goes_here
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656106#overview
 
 ```
 notes_go_here
@@ -52,9 +52,25 @@ notes_go_here
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656102#overview
 
+
+what's up with 
 ```
-notes_go_here
+  ngOnInit(): void {
+      
+  }
 ```
+(it's a lifecycle hook)  
+  
+When a new component is created in Angular, we go through a few phases in the creation process.  Here we have a chance to hook into these phases and execute some code (by implementing some methods)  
+  
+* `ngOnChanges` at the start when a component is created AND when any bound input property changes
+* `ngOnInit` called once the component is initialized.
+* `ngDoCheck` called during every change detection run.  Change detection is the system by which Angular determines that something changes inside a component.  When a property value changes and it's output in the template, Angular needs to re-render.  This will fire even when nothing changes...it's fired when certain triggering events happen.
+* `ngAfterContentInit` called after content (ng-content) has been projected into the view
+* `ngAfterContentChecked` called every time the projected content has been checked
+* `ngAfterViewInit` called after the component's view (and child views) has been initialized
+* `ngAfterViewChecked` called every time the view (and child views) have been checked
+* `ngOnDestroy` called once the component is about to be destroyed
 
 ### 77. Projecting Content into Components with ng-content
 

@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
