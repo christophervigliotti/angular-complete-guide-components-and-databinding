@@ -29,6 +29,10 @@ export class AppComponent {
   }
 
   onChangeFirst(){
-    this.serverElements[0].name = 'Changed';
+    this.serverElements[0].name = 'BAM';
+  }
+
+  onDestroyFirst(){
+    this.serverElements.splice(0,1);
   }
 }

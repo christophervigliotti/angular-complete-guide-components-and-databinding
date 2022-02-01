@@ -4,7 +4,7 @@
 
 ## Next Time
 
-* review 78, dive into 79 and 80
+* second pass through 79, focusing on getting notes down for each of the lifecycle hooks
 
 ## Notes
 
@@ -44,8 +44,25 @@ notes_go_here
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656106#overview
 
+* (I am) lost and (the code is) broken.
+* That was almost a haiku
+* got it now (syntax error)
+* the bigger issue is that I would benefit from reviewing this entire section again before proceeding.  not an issue but rather a way to fill in the knowlege gap.  adapt and overcome!
+
+#### Actual Notes
+
+    console.log('ngAfterContentInit called');
+* 
+
+* ngDoCheck() gets called whenever Angular checks for any changes.
+
+* constructor()
+
+* ngOnChanges()
+
+* ngOnInit()
+
 ```
-notes_go_here
 ```
 
 ### 78. Understanding the Component Lifecycle
