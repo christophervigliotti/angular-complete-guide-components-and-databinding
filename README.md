@@ -24,7 +24,7 @@ url_goes_here
 notes_go_here
 ```
 
-### 81. chapter_title
+### 81. @ContentChild() in Angular 8+
 
 url_goes_here
 
@@ -36,9 +36,7 @@ notes_go_here
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656110#overviewhere
 
-```
-notes_go_here
-```
+after view init gives you access to template elements...before this hook has been reached you do not have access
 
 ### 79. Seeing Lifecycle Hooks in Action
 

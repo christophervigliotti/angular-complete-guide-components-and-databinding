@@ -36,7 +36,8 @@ export class ServerElementComponent implements
     content: string
   };
   @Input() name: string;
-  @ViewChild('heading') header: ElementRef;
+  // no bueno @ViewChild('heading') header: ElementRef;
+  @ViewChild('heading',{static:true}) header: ElementRef;
 
   /*
   ngAfterViewChecked is called 
@@ -52,6 +53,7 @@ export class ServerElementComponent implements
   */ 
   ngAfterViewInit(){
     console.log('ngAfterViewInit called');
+    console.log(' - Test Content: ' + this.header.nativeElement.textContent);
   }
 
   /*
@@ -60,6 +62,7 @@ export class ServerElementComponent implements
   */ 
   ngAfterContentChecked(){
     console.log('ngAfterContentChecked called');
+    console.log(' - Test Content: ' + this.header.nativeElement.textContent);
   }
 
   /*
@@ -68,6 +71,7 @@ export class ServerElementComponent implements
   */ 
   ngAfterContentInit(){
     console.log('ngAfterContentInit called');
+    console.log(' - Test Content: ' + this.header.nativeElement.textContent);
   }
 
   /*
@@ -111,7 +115,8 @@ export class ServerElementComponent implements
   ngOnInit is called 
     
   */ 
-  ngOnInit(): void {
+  ngOnInit(): void {    
     console.log('ngOnInit called (in parent ts file)');
+    console.log(' - Test Content: ' + this.header.nativeElement.textContent);
   }
 }
