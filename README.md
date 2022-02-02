@@ -51,18 +51,93 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/66561
 
 #### Actual Notes
 
-    console.log('ngAfterContentInit called');
-* 
+* good stuff here https://angular.io/guide/lifecycle-hooks 
 
-* ngDoCheck() gets called whenever Angular checks for any changes.
-
-* constructor()
-
-* ngOnChanges()
-
-* ngOnInit()
-
+##### ngAfterViewChecked
+Purpose
 ```
+Respond when Angular sets or resets data-bound input properties. The method receives a SimpleChanges object of current and previous property values.
+
+Note that this happens very frequently, so any operation you perform here impacts performance significantly. See details in Using change detection hooks in this document.
+```
+Timing
+```
+Called before ngOnInit() (if the component has bound inputs) and whenever one or more data-bound input properties change. 
+
+Note that if your component has no inputs or you use it without providing any inputs, the framework will not call ngOnChanges().
+```
+##### ng_thing
+Purpose
+```
+```
+Timing
+```
+```
+##### ngAfterViewInit 
+Purpose
+```
+```
+Timing
+```
+```
+##### ngAfterContentChecked 
+Purpose
+```
+```
+Timing
+```
+```
+##### ngAfterContentInit 
+Purpose
+```
+```
+Timing
+```
+```
+##### ngDoCheck 
+* is called on every change detection run
+* when an event is called
+* when a promise gives us back some data
+Purpose
+```
+```
+Timing
+```
+```
+##### constructor  
+* is called every time a new instance of this component is created
+* it's called first
+Purpose
+```
+```
+Timing
+```
+```
+##### ngOnChanges 
+* is called every time there is a change
+* is the only lifecycle hook to take an argument (of type SimpleChanges)
+* ngOnChanges(changes: SimpleChanges){}
+Purpose
+```
+```
+Timing
+```
+```
+##### ngOnDestroy 
+Purpose
+```
+```
+Timing
+```
+```
+##### ngOnInit 
+Purpose
+```
+Initialize the directive or component after Angular first displays the data-bound properties and sets the directive or component's input properties. See details in Initializing a component or directive in this document.
+```
+Timing
+```
+Called once, after the first ngOnChanges(). ngOnInit() is still called even when ngOnChanges() is not (which is the case when there are no template-bound inputs).
 ```
 
 ### 78. Understanding the Component Lifecycle
