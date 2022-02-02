@@ -44,48 +44,52 @@ export class ServerElementComponent implements
   }
 
   /*
-  ngAfterViewInit is called 
-    
+  ngAfterViewInit 
+  * is called 
   */ 
   ngAfterViewInit(){
     console.log('ngAfterViewInit called');
   }
 
   /*
-  ngAfterContentChecked is called 
-    
+  ngAfterContentChecked 
+  * is called 
   */ 
   ngAfterContentChecked(){
     console.log('ngAfterContentChecked called');
   }
 
   /*
-  ngAfterContentInit is called 
-    
+  ngAfterContentInit 
+  * is called 
   */ 
   ngAfterContentInit(){
     console.log('ngAfterContentInit called');
   }
 
   /*
-  ngDoCheck is called 
-    
+  ngDoCheck 
+  * is called on every change detection run
+  * when an event is called
+  * when a promise gives us back some data
   */ 
   ngDoCheck(){
     console.log('ngDoCheck called');
   }
 
   /*
-  constructor is called 
-    
+  constructor  
+  * is called every time a new instance of this component is created
+  * it's called first
   */ 
   constructor(){
     console.log('constructor called');
   }
 
   /*
-  ngOnChanges is called 
-    
+  ngOnChanges 
+  * is called every time there is a change
+  * is the only lifecycle hook to take an argument (of type SimpleChanges)
   */ 
   ngOnChanges(changes: SimpleChanges){
     console.log('ngOnChanges called');
@@ -97,7 +101,7 @@ export class ServerElementComponent implements
     
   */ 
   ngOnDestroy(){
-    console.log('ngOnDestroy called');
+    console.log('ngOnDestroy called (in parent ts file)');
   }
 
   /*
@@ -105,6 +109,6 @@ export class ServerElementComponent implements
     
   */ 
   ngOnInit(): void {
-    console.log('ngOnInit called');
+    console.log('ngOnInit called (in parent ts file)');
   }
 }

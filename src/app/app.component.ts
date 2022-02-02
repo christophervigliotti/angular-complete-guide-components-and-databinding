@@ -29,10 +29,12 @@ export class AppComponent {
   }
 
   onChangeFirst(){
+    console.log('onChangesFirst called + will trigger ngOnChanges');
     this.serverElements[0].name = 'BAM';
   }
 
   onDestroyFirst(){
+    console.log('onDestroyFirst called + will trigger ngOnDestroy');
     this.serverElements.splice(0,1);
   }
 }
