@@ -4,7 +4,7 @@
 
 ## Next Time
 
-* second pass through 79, focusing on getting notes down for each of the lifecycle hooks
+* 82.  Onward and upward!
 
 ## Notes
 
@@ -16,9 +16,9 @@ url_goes_here
 notes_go_here
 ```
 
-### 82. chapter_title
+### 82. Getting Access to ng-content with @ContentChild
 
-url_goes_here
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656114#questionss_here
 
 ```
 notes_go_here
@@ -26,11 +26,9 @@ notes_go_here
 
 ### 81. @ContentChild() in Angular 8+
 
-url_goes_here
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/14865271#questions
 
-```
-notes_go_here
-```
+a quick note about syntax changes for @ContentChild()
 
 ### 80. Lifecycle Hooks and Template Access
 
