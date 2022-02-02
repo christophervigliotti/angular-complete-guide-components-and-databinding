@@ -8,21 +8,20 @@
 
 ## Notes
 
-### 83. chapter_title
+(onward to Assignment 4 and then section 6!)
 
-url_goes_here
+### 83. Wrap Up
 
-```
-notes_go_here
-```
+url_goeshttps://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656116#questions_here
 
 ### 82. Getting Access to ng-content with @ContentChild
 
 https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656114#questionss_here
 
-```
-notes_go_here
-```
+* added `@ContentChild` to server-element.component.ts and a local reference to the p tag in app.component.ts
+
+* so `<p #contentParagraph>` is wired to the child component via this code in app.component.ts `@ContentChild('contentParagraph',{static:true}) paragraph: ElementRef;`.  We have access to this from ngAfterContentInit() forward ala `console.log(' - Test Content of paragraph: ' + this.paragraph.nativeElement.textContent);`
+
 
 ### 81. @ContentChild() in Angular 8+
 
