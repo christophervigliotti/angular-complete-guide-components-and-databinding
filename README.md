@@ -32,9 +32,9 @@ url_goes_here
 notes_go_here
 ```
 
-### 80. chapter_title
+### 80. Lifecycle Hooks and Template Access
 
-url_goes_here
+https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656110#overviewhere
 
 ```
 notes_go_here
@@ -50,10 +50,70 @@ https://www.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/66561
 * the bigger issue is that I would benefit from reviewing this entire section again before proceeding.  not an issue but rather a way to fill in the knowlege gap.  adapt and overcome!
 
 #### Actual Notes
+via https://angular.io/guide/lifecycle-hooks 
 
-* good stuff here https://angular.io/guide/lifecycle-hooks 
+##### ngAfterViewChecked()
+Purpose
+```
+Respond after Angular checks the component's views and child views, or the view that contains the directive.
+```
+Timing
+```
+Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().
+```
+##### ngAfterViewInit()
+Purpose
+```
+Respond after Angular initializes the component's views and child views, or the view that contains the directive.
 
-##### ngAfterViewChecked
+See details and example in Responding to view changes in this document https://angular.io/guide/lifecycle-hooks#afterview 
+```
+Timing
+```
+Called once after the first ngAfterContentChecked().
+```
+##### ngAfterContentChecked()
+Purpose
+```
+Respond after Angular checks the content projected into the directive or component.
+
+See details and example in Responding to projected content changes in this document https://angular.io/guide/lifecycle-hooks#aftercontent 
+```
+Timing
+```
+Called after ngAfterContentInit() and every subsequent ngDoCheck().
+```
+##### ngAfterContentInit()
+Purpose
+```
+Respond after Angular projects external content into the component's view, or into the view that a directive is in.
+
+See details and example in Responding to changes in content in this document. https://angular.io/guide/lifecycle-hooks#aftercontent 
+```
+Timing
+```
+Called once after the first ngDoCheck().
+```
+##### ngDoCheck() 
+* is called on every change detection run
+* when an event is called
+* when a promise gives us back some data
+Purpose
+```
+Detect and act upon changes that Angular can't or won't detect on its own. See details and example in Defining custom change detection in this document https://angular.io/guide/lifecycle-hooks#docheck
+```
+Timing
+```
+Called immediately after ngOnChanges() on every change detection run, and immediately after ngOnInit() on the first run.
+```
+##### constructor  
+* is called every time a new instance of this component is created
+* it's called first
+* technically not a lifecycle hook
+##### ngOnChanges 
+* is called every time there is a change
+* is the only lifecycle hook to take an argument (of type SimpleChanges)
+* example: `ngOnChanges(changes: SimpleChanges){}`
 Purpose
 ```
 Respond when Angular sets or resets data-bound input properties. The method receives a SimpleChanges object of current and previous property values.
@@ -66,74 +126,19 @@ Called before ngOnInit() (if the component has bound inputs) and whenever one or
 
 Note that if your component has no inputs or you use it without providing any inputs, the framework will not call ngOnChanges().
 ```
-##### ng_thing
-Purpose
-```
-```
-Timing
-```
-```
-##### ngAfterViewInit 
-Purpose
-```
-```
-Timing
-```
-```
-##### ngAfterContentChecked 
-Purpose
-```
-```
-Timing
-```
-```
-##### ngAfterContentInit 
-Purpose
-```
-```
-Timing
-```
-```
-##### ngDoCheck 
-* is called on every change detection run
-* when an event is called
-* when a promise gives us back some data
-Purpose
-```
-```
-Timing
-```
-```
-##### constructor  
-* is called every time a new instance of this component is created
-* it's called first
-Purpose
-```
-```
-Timing
-```
-```
-##### ngOnChanges 
-* is called every time there is a change
-* is the only lifecycle hook to take an argument (of type SimpleChanges)
-* ngOnChanges(changes: SimpleChanges){}
-Purpose
-```
-```
-Timing
-```
-```
 ##### ngOnDestroy 
 Purpose
 ```
+	Cleanup just before Angular destroys the directive or component. Unsubscribe Observables and detach event handlers to avoid memory leaks. See details in Cleaning up on instance destruction in this document https://angular.io/guide/lifecycle-hooks#ondestroy 
 ```
 Timing
 ```
+Called immediately before Angular destroys the directive or component.
 ```
 ##### ngOnInit 
 Purpose
 ```
-Initialize the directive or component after Angular first displays the data-bound properties and sets the directive or component's input properties. See details in Initializing a component or directive in this document.
+Initialize the directive or component after Angular first displays the data-bound properties and sets the directive or component's input properties. See details in Initializing a component or directive in this document https://angular.io/guide/lifecycle-hooks#oninit 
 ```
 Timing
 ```

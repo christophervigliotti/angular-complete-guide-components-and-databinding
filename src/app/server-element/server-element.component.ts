@@ -10,7 +10,9 @@ import {
   AfterContentChecked,
   AfterViewChecked,
   AfterViewInit,
-  OnDestroy
+  OnDestroy,
+  ViewChild,
+  ElementRef
 } from '@angular/core';
 
 @Component({
@@ -34,6 +36,7 @@ export class ServerElementComponent implements
     content: string
   };
   @Input() name: string;
+  @ViewChild('heading') header: ElementRef;
 
   /*
   ngAfterViewChecked is called 
